@@ -29,12 +29,9 @@ jobs:
     
     - name: Install Surge
       run: npm install -g surge
-      
-    - name: Change directory to build
-      run: cd build
     
     - name: Deploy on surge
-      run: surge ./ bootcamp2020c2waqas.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build/ bootcamp2020c2waqas.surge.sh --token ${{ secrets.SURGE_TOKEN }}
    
      
         
