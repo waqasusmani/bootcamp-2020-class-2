@@ -27,6 +27,9 @@ jobs:
       with:
         node-version: 12
     
+    - name: Make Production Build
+      run: npm run build
+       
     - name: Install Surge
       run: npm install -g surge
     
