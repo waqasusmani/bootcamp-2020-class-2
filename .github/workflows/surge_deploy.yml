@@ -27,6 +27,9 @@ jobs:
       with:
         node-version: 12
     
+    -name: Install node_modules
+      run: npm install
+      
     - name: Make Production Build
       run: npm run build
        
